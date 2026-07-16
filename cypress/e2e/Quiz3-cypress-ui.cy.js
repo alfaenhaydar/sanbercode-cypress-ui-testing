@@ -80,8 +80,8 @@ describe("Test Scenario Fungsi Login", () => {
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     );
-    cy.get('[name = "username"]').type("admin");
-    cy.get('[name = "password"]').type("Admin123");
+    cy.get('[name = "username"]').type("Admin");
+    cy.get('[name = "password"]').type("admin123");
     cy.get('[type="submit"]').click();
     cy.url().should("include", "login");
   });
@@ -90,8 +90,8 @@ describe("Test Scenario Fungsi Login", () => {
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     );
-    cy.get('[name = "username"]').type("admin😃");
-    cy.get('[name = "password"]').type("Admin123");
+    cy.get('[name = "username"]').type("Admin😃");
+    cy.get('[name = "password"]').type("admin123");
     cy.get('[type="submit"]').click();
     cy.url().should("include", "login");
   });
@@ -100,8 +100,8 @@ describe("Test Scenario Fungsi Login", () => {
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     );
-    cy.get('[name = "username"]').type("admin");
-    cy.get('[name = "password"]').type("Admin123😃");
+    cy.get('[name = "username"]').type("Admin");
+    cy.get('[name = "password"]').type("admin123😃");
     cy.get('[type="submit"]').click();
     cy.url().should("include", "login");
   });
@@ -110,8 +110,8 @@ describe("Test Scenario Fungsi Login", () => {
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
     );
-    cy.get('[name = "username"]').type(" admin");
-    cy.get('[name = "password"]').type("Admin123😃");
+    cy.get('[name = "username"]').type(" Admin");
+    cy.get('[name = "password"]').type("admin123");
     cy.get('[type="submit"]').click();
     cy.url().should("include", "login");
   });

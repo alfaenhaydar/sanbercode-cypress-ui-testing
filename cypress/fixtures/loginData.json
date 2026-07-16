@@ -1,0 +1,9 @@
+{
+  "usernameValid": "Admin",
+  "passwordValid": "admin123",
+  "usernameInvalid": "Wakwaw",
+  "passwordInvalid": "aduh_salah",
+  "usernameWithEmoticon": "Admin😀",
+  "passwordWithWrongCase": "Admin123",
+  "usernameWithLeadingSpace": " Admin"
+}
