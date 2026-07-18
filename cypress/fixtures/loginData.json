@@ -4,6 +4,10 @@
   "usernameInvalid": "Wakwaw",
   "passwordInvalid": "aduh_salah",
   "usernameWithEmoticon": "Admin😀",
+  "psswordWithEmoticon": "admin123😀",
   "passwordWithWrongCase": "Admin123",
-  "usernameWithLeadingSpace": " Admin"
+  "usernameWithLeadingSpace": " Admin",
+  "passwordWithLeadingSpace": " admin123",
+  "urlDashboard": "dashboard/index",
+  "urlLoginPage": "auth/login"
 }

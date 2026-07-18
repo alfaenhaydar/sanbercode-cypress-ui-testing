@@ -14,6 +14,31 @@ class loginPage {
   clickLoginButton() {
     cy.get('[type="submit"]').click();
   }
+  cekInterceptSummary() {
+    cy.intercept(
+      "GET",
+      "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/action-summary",
+    ).as("getactionSummary");
+  }
+
+  waitInterceptSummary() {
+    cy.wait("@getactionSummary").its("response.statusCode").should("eq", 200);
+  }
+
+  cekInterceptValidate() {
+    cy.intercept(
+      "POST",
+      "https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate",
+    ).as("postvalidate");
+  }
+
+  waitInterceptValidate() {
+    cy.wait("@postvalidate").its("request.method").should("eq", "POST");
+  }
+
+  assertUrl(url) {
+    cy.url().should("include", url);
+  }
 }
 
 export default new loginPage();
